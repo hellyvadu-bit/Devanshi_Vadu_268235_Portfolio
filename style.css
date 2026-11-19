@@ -1362,3 +1362,125 @@ body:not(.dark-mode) .btn-primary {
     gap: 22px !important;
   }
 }
+/* SPLIT EDITORIAL HERO WITH PORTRAIT CARD */
+.hero {
+  max-width: 1160px !important;
+  padding: 58px 28px 65px !important;
+  text-align: left !important;
+}
+
+.hero-split {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 54px;
+  align-items: center;
+  margin-bottom: 52px;
+}
+
+.hero-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 10px;
+  letter-spacing: 0.2px;
+}
+
+.hero-content h1 {
+  font-size: clamp(36px, 4.8vw, 58px) !important;
+  line-height: 1.12;
+  margin-bottom: 16px;
+}
+
+.hero-content .hero-bio {
+  margin: 0 0 28px 0 !important;
+  max-width: 540px;
+}
+
+.hero-content .hero-buttons {
+  justify-content: flex-start !important;
+  margin-bottom: 0 !important;
+}
+
+/* Framed Portrait Card */
+.hero-portrait-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: var(--shadow);
+  max-width: 310px;
+  width: 100%;
+  justify-self: end;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-portrait-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.hero-portrait-img {
+  width: 100%;
+  aspect-ratio: 4 / 4.6;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.portrait-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 2px 4px;
+}
+
+.portrait-caption strong {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.portrait-caption span {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+}
+
+/* Full-width stats bar below the split */
+.hero .hero-stats {
+  display: flex !important;
+  justify-content: flex-start;
+  width: 100%;
+  padding-top: 26px;
+}
+
+/* Mobile Layout */
+@media (max-width: 820px) {
+  .hero {
+    text-align: center !important;
+    padding-top: 40px !important;
+  }
+
+  .hero-split {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero-portrait-card {
+    order: -1;
+    justify-self: center;
+    max-width: 240px;
+  }
+
+  .hero-content .hero-bio {
+    margin: 0 auto 24px !important;
+  }
+
+  .hero-content .hero-buttons,
+  .hero .hero-stats {
+    justify-content: center !important;
+  }
+}
