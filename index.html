@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devanshi Vadu — Developer &amp; Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top scroll progress indicator -->
+  <div id="scrollProgress"></div>
+
+  <!-- Ambient glowing background orbs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo">Devanshi<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">☾ Dark</button>
+        <button id="menuToggle" class="menu-btn" aria-label="Toggle menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero reveal">
+      <div class="status-pill">
+        <span class="pulse-dot"></span>
+        B.Tech CSE • Ahmedabad, India
+      </div>
+
+      <h1>
+  Exploring technology,<br>
+  creativity &amp; <span class="serif-italic accent-text">possibilities.</span>
+</h1>
+
+      <p class="typewriter-line">
+        I am a <span id="typewriter"></span><span class="cursor">|</span>
+      </p>
+
+      <p class="hero-bio">
+        I’m <strong>Devanshi Vadu</strong> — a Computer Science student blending full-stack web
+        development, glassmorphic UI/UX design, and digital strategy to turn ideas into
+        polished products.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">Explore My Work</a>
+        <a href="#contact" class="btn-ghost">Let’s Connect</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">03+</span>
+          <span class="stat-label">Featured Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">CSE</span>
+          <span class="stat-label">Diploma + B.Tech</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">360°</span>
+          <span class="stat-label">Code • Design • Growth</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Journey Section -->
+    <section id="about" class="section reveal">
+      <div class="section-header">
+        <span class="section-kicker">01 / ABOUT ME</span>
+        <h2>A little about <span class="serif-italic accent-text">me.</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card about-story">
+          <h3>My Perspective</h3>
+          <p>
+            After completing my <strong>Diploma in Computer Engineering</strong> at Dr. Subhash
+            University, I stepped into my <strong>B.Tech in CSE at JG University, Ahmedabad</strong>.
+            I love building web interfaces that feel intentional—clean backend logic paired with
+            modern, editorial visuals.
+          </p>
+          <p>
+            Beyond code, I explore hands-on cybersecurity on <strong>TryHackMe</strong>, design
+            custom logos and UI mockups, and have worked in client outreach and digital marketing
+            at <strong>MindfulBoost Media</strong>—which taught me how real businesses think and grow.
+          </p>
+        </div>
+
+        <div class="glass-card timeline-card">
+         <h3>My Journey</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-year">2026 — Present</span>
+              <h4>B.Tech in Computer Science &amp; Engineering</h4>
+              <p>JG University, Ahmedabad</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2026</span>
+              <h4>Client Outreach &amp; Digital Marketing</h4>
+              <p>MindfulBoost Media — Strategy &amp; local business outreach</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">Completed 2026</span>
+              <h4>Diploma in Computer Engineering</h4>
+              <p>Dr. Subhash University • DSU Ideathon 2026 Participant</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section reveal">
+      <div class="section-header">
+        <span class="section-kicker">02 / TOOLKIT</span>
+        <h2>My technical <span class="serif-italic accent-text">toolkit.</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="glass-card skill-group">
+          <span class="card-index">01</span>
+          <h3>Web &amp; Development</h3>
+          <div class="pill-wrap">
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">PHP</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">Python</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-group">
+          <span class="card-index">02</span>
+          <h3>Design &amp; Creative</h3>
+          <div class="pill-wrap">
+            <span class="pill">UI/UX Mockups</span>
+            <span class="pill">Glassmorphism</span>
+            <span class="pill">Logo Design</span>
+            <span class="pill">Design Thinking</span>
+            <span class="pill">Responsive Layouts</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-group">
+          <span class="card-index">03</span>
+          <h3>Security &amp; Workflow</h3>
+          <div class="pill-wrap">
+            <span class="pill">TryHackMe</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">Cursor AI</span>
+            <span class="pill">Git &amp; GitHub</span>
+            <span class="pill">Digital Outreach</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section reveal">
+      <div class="section-header">
+        <span class="section-kicker">03 / SELECTED WORK</span>
+        <h2>Selected <span class="serif-italic accent-text">work.</span></h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="glass-card project-card">
+          <div class="project-top">
+            <span class="project-num">01</span>
+            <span class="project-type">Full-Stack Web App</span>
+          </div>
+          <h3>Elevate You</h3>
+          <p>
+            A personal growth web platform built with a modern glassmorphism aesthetic, complete
+            with user registration, authentication, and personalised user dashboards.
+          </p>
+          <div class="tech-row">
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+          </div>
+        </article>
+
+        <article class="glass-card project-card">
+          <div class="project-top">
+            <span class="project-num">02</span>
+            <span class="project-type">Design Thinking &amp; AI</span>
+          </div>
+          <h3>ChemAI</h3>
+          <p>
+            An AI-driven concept for chemical and pharmaceutical R&amp;D, backed by user research
+            surveys, persona mapping, competitive analysis, and interactive formula prototypes.
+          </p>
+          <div class="tech-row">
+            <span>UI/UX</span>
+            <span>User Research</span>
+            <span>Prototyping</span>
+          </div>
+        </article>
+
+        <article class="glass-card project-card">
+          <div class="project-top">
+            <span class="project-num">03</span>
+            <span class="project-type">DSU Ideathon 2026</span>
+          </div>
+          <h3>ECO-ROVER</h3>
+          <p>
+            An autonomous smart waste-sorting bin concept co-created for DSU Ideathon 2026 to
+            make everyday waste segregation faster, smarter, and sustainable.
+          </p>
+          <div class="tech-row">
+            <span>Smart Tech</span>
+            <span>Ideation</span>
+            <span>System Design</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section reveal">
+      <div class="section-header">
+        <span class="section-kicker">04 / GET IN TOUCH</span>
+        <h2>Let's start a <span class="serif-italic accent-text">conversation.</span></h2>
+      </div>
+
+      <form id="contactForm" class="glass-card" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="e.g., Aarav Patel">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="e.g., hello@example.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" rows="4" placeholder="Tell me about your project or idea..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary full-width">Send Message ↗</button>
+        <p id="formFeedback" class="feedback"></p>
+      </form>
+    </section>
+  </main>
+
+ <footer>
+  <p>Designed &amp; built by <strong>Devanshi Vadu</strong></p>
+  <span class="footer-note">Exploring technology, creativity &amp; possibilities.</span>
+  <a href="#home" class="back-top">Back to top ↑</a>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
